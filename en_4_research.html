@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · DROM Lab · KNU</title>
+<meta name="description" content="Six research areas from off-road machinery design and reliability to physics-informed AI sensorless fluid control.">
+<meta property="og:title" content="Research · DROM Lab · KNU">
+<meta property="og:description" content="Six research areas from off-road machinery design and reliability to physics-informed AI sensorless fluid control.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="drom_logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#ffffff;}
+  body{font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,-apple-system,sans-serif;}
+</style>
+</head>
+<body>
+<!-- [RESEARCH · EN] Design & Reliability of Off-road Machinery Laboratory (DROM Lab) -->
+<section class="dl-root" id="dl-research">
+  <style>
+    .dl-root{--navy:#0d2440;--blue:#b02419;--teal:#d5241a;--accent:#d5241a;--accent2:#eaa79e;
+      --ink:#141b24;--muted:#5a6472;--line:#e5e9f0;--bg:#f4f7fb;--card:#fff;
+      color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,-apple-system,sans-serif;
+      line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all;font-size:17px;max-width:1080px;margin:0 auto;padding:0 22px 60px;box-sizing:border-box;}
+    .dl-root *{box-sizing:border-box;}
+    .dl-root h1,.dl-root h2,.dl-root h3,.dl-root h4,.dl-root h5,.dl-root p,.dl-root ul{margin:0;}
+    .dl-root a{color:var(--blue);text-decoration:none;}.dl-root a:hover{text-decoration:underline;}
+    .dl-lang{display:flex;justify-content:flex-end;gap:6px;margin-top:16px;font-size:13.5px;font-weight:700;}
+    .dl-lang a{padding:4px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);}
+    .dl-lang a.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+    .dl-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap;}
+    .dl-logo{height:46px;width:auto;display:block;}
+    .dl-top .dl-lang{margin-top:0;}
+    .dl-hero{position:relative;overflow:hidden;border-radius:20px;margin-top:12px;
+      background:linear-gradient(115deg,#0d2440 0%,#5a2233 55%,#d5241a 135%);color:#fff;
+      display:grid;grid-template-columns:1.25fr .9fr;gap:32px;align-items:center;padding:50px 46px;}
+    .dl-hero::after{content:"";position:absolute;right:-70px;top:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(213,36,26,.20),transparent 68%);}
+    .dl-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--accent2);text-transform:uppercase;margin-bottom:14px;}
+    .dl-eyebrow::before{content:"";width:28px;height:2px;background:var(--accent);}
+    .dl-hero h1{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-.02em;line-height:1.14;}
+    .dl-hero p.lead{margin-top:16px;max-width:520px;font-size:16px;color:#d8e4f0;}
+    .dl-glance{position:relative;z-index:2;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:24px 26px;}
+    .dl-glance h5{font-size:12.5px;letter-spacing:.1em;color:var(--accent2);text-transform:uppercase;font-weight:800;margin-bottom:14px;}
+    .dl-glance dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:11px 16px;}
+    .dl-glance dt{font-size:13px;color:#a9bfd6;font-weight:700;white-space:nowrap;}
+    .dl-glance dd{margin:0;font-size:14.5px;color:#fff;font-weight:600;line-height:1.4;white-space:nowrap;}
+    .dl-core{margin-top:20px;background:linear-gradient(120deg,#3a1f27,#6e2436);color:#fff;border-radius:16px;padding:26px 30px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+    .dl-core .kw{font-size:21px;font-weight:800;}.dl-core .kw em{color:var(--accent);font-style:normal;}
+    .dl-core p{font-size:15px;color:#d3e2f0;flex:1;min-width:280px;}
+    .dl-sec{margin-top:44px;}
+    .dl-sechead{display:flex;align-items:center;gap:13px;margin-bottom:18px;}
+    .dl-sechead .bar{width:6px;height:26px;border-radius:3px;background:linear-gradient(var(--teal),var(--blue));}
+    .dl-sechead h2{font-size:26px;font-weight:800;letter-spacing:-.01em;}
+    .dl-area{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 30px;margin-bottom:16px;transition:box-shadow .16s,border-color .16s;}
+    .dl-area:hover{box-shadow:0 14px 30px rgba(13,36,64,.08);border-color:#cfe0ee;}
+    .dl-area .hd{display:flex;align-items:baseline;gap:12px;}
+    .dl-area .no{font-size:15px;font-weight:800;color:var(--teal);}
+    .dl-area h4{font-size:20px;font-weight:800;}
+    .dl-area > p{margin-top:10px;font-size:16px;color:#3a4653;}
+    .dl-meta{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;}
+    .dl-meta h5{font-size:12.5px;font-weight:800;color:var(--navy);letter-spacing:.03em;margin-bottom:6px;text-transform:uppercase;}
+    .dl-meta ul{list-style:none;padding:0;}
+    .dl-meta li{position:relative;padding-left:15px;font-size:14.5px;color:#4a5663;margin:3px 0;}
+    .dl-meta li::before{content:"";position:absolute;left:0;top:10px;width:5px;height:5px;border-radius:50%;background:var(--accent);}
+    .dl-road{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+    .dl-step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px 18px;}
+    .dl-step .ph{font-size:12.5px;font-weight:800;color:var(--teal);letter-spacing:.08em;}
+    .dl-step b{display:block;margin-top:6px;font-size:17px;font-weight:800;}
+    .dl-step p{margin-top:6px;font-size:13.5px;color:var(--muted);}
+    .dl-step::after{content:"→";position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:800;}
+    .dl-road .dl-step:last-child::after{display:none;}
+    .dl-cta{margin-top:44px;background:linear-gradient(120deg,var(--blue),var(--navy));color:#fff;border-radius:18px;padding:32px 36px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;}
+    .dl-cta h3{font-size:22px;font-weight:800;color:#fff;}.dl-cta p{margin-top:7px;font-size:15.5px;color:#d7e4f1;}
+    .dl-cbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;}
+    .dl-btn{background:#fff;color:var(--navy);font-weight:800;font-size:15px;padding:13px 22px;border-radius:11px;white-space:nowrap;}
+    .dl-btn.ghost{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.55);}
+    @media (max-width:840px){.dl-root{font-size:16px;}.dl-hero{grid-template-columns:1fr;gap:22px;padding:38px 26px;}
+      .dl-meta{grid-template-columns:1fr;}.dl-road{grid-template-columns:1fr 1fr;}.dl-road .dl-step::after{display:none;}
+      .dl-cta{grid-template-columns:1fr;}.dl-cbtns{justify-content:flex-start;}}
+  </style>
+
+  <div class="dl-top">
+    <img class="dl-logo" src="drom_logo.svg" alt="DROM Lab · Design and Reliability of Off-road Machinery Laboratory">
+    <div class="dl-lang"><a href="ko_4_research.html"><!-- edit -->KO</a><a class="on" href="#">EN</a></div>
+  </div>
+
+  <!-- HERO -->
+  <div class="dl-hero">
+    <div>
+      <span class="dl-eyebrow">DROM Lab · Research</span>
+      <h1>Research Areas</h1>
+      <p class="lead">From off-road machinery design &amp; reliability to gear/transmission dynamics, positive-displacement pumps &amp; flow meters, and physics-informed AI precision fluid control — six focused areas that connect theory with the field.</p>
+    </div>
+    <div class="dl-glance">
+      <h5>Research at a Glance</h5>
+      <dl>
+        <dt>Areas</dt><dd>6 focused research areas</dd>
+        <dt>Core</dt><dd>Sensorless dosing · AI</dd>
+        <dt>Precision</dt><dd>±1% volumetric dosing</dd>
+        <dt>Markets</dt><dd>F&amp;B · Agri · Public · Industry</dd>
+        <dt>Field proof</dt><dd>35 spraying modules · NIAS</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- AREAS -->
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Research Areas in Detail</h2></div>
+
+    <div class="dl-area">
+      <div class="hd"><span class="no">01</span><h4>Off-road Machinery Design</h4></div>
+      <p>We precisely design the drive and working parts of machinery operated off the road — tractors, combines, transplanters, and heavy construction equipment — and verify performance and safety through multi-body dynamics (MBD) and structural/strength analysis.</p>
+      <div class="dl-meta">
+        <div><h5>Approach</h5><ul><li>MBD dynamic simulation</li><li>Structural / fatigue / strength analysis</li><li>Overturning &amp; driving stability analysis</li></ul></div>
+        <div><h5>Highlights</h5><ul><li>Overturning stability of small off-road vehicles</li><li>Tractor draft-force measurement method</li><li>Differential-case strength evaluation</li></ul></div>
+      </div>
+    </div>
+
+    <div class="dl-area">
+      <div class="hd"><span class="no">02</span><h4>Reliability &amp; Life Assessment</h4></div>
+      <p>We identify failure mechanisms of parts and modules and quantitatively assess reliability via accelerated-life, corrosion, and durability testing plus load measurement, improving life through robust design.</p>
+      <div class="dl-meta">
+        <div><h5>Approach</h5><ul><li>Accelerated-life testing (ALT) · B10 life</li><li>Corrosion / chemical-durability testing</li><li>Robust design</li></ul></div>
+        <div><h5>Highlights</h5><ul><li>Corrosion failure mode of soil-sterilizer pump</li><li>Multiple component-reliability infrastructure projects</li><li>Book: “Life &amp; Reliability of Machine Parts”</li></ul></div>
+      </div>
+    </div>
+
+    <div class="dl-area">
+      <div class="hd"><span class="no">03</span><h4>Gear &amp; Transmission Dynamics</h4></div>
+      <p>We predict and reduce resonance-induced load amplification in high-speed gears and analyze the dynamic behavior and losses of planetary transmissions and gearboxes for lightweight, low-noise, high-reliability design.</p>
+      <div class="dl-meta">
+        <div><h5>Approach</h5><ul><li>Dynamic factor (Kv) &amp; transmission-error prediction</li><li>Profile modification / crowning optimization</li><li>Gearbox churning-loss prediction</li></ul></div>
+        <div><h5>Highlights</h5><ul><li>PTO rattle-noise reduction (anti-backlash gear)</li><li>Dynamic-behavior prediction &amp; reduction</li><li>Wind-turbine gearbox load-distribution analysis</li></ul></div>
+      </div>
+    </div>
+
+    <div class="dl-area">
+      <div class="hd"><span class="no">04</span><h4>PD Pump &amp; Precision Flow Metering</h4></div>
+      <p>We model the leakage and pulsation of positive-displacement pumps and flow meters — rotary-clap, oval-gear, lobe, and vane — and optimize tooth and geometric parameters to improve metering accuracy.</p>
+      <div class="dl-meta">
+        <div><h5>Approach</h5><ul><li>Physics-based leakage modeling</li><li>Tooth-profile / addendum / backlash optimization</li><li>Pulsation, drive-torque, efficiency prediction</li></ul></div>
+        <div><h5>Highlights</h5><ul><li>Rotary-clap PD pump development (SCIE)</li><li>Oval flow-meter optimal-design patent (KR)</li><li>EVER compact oval flow meter productization</li></ul></div>
+      </div>
+    </div>
+
+    <div class="dl-area">
+      <div class="hd"><span class="no">05</span><h4>Sensorless Precision Fluid Control · Physics-informed AI</h4></div>
+      <p>Without expensive flow sensors, we combine pump drive data (V·I·rpm·t) with physics models and AI virtual sensors to achieve <strong>±1% precision volumetric dosing</strong> even under viscosity, temperature, and level changes.</p>
+      <div class="dl-meta">
+        <div><h5>Approach</h5><ul><li>First-principles leakage physics model</li><li>AI residual correction (Hybrid Physics-AI)</li><li>Real-time viscosity/temperature-corrected firmware</li></ul></div>
+        <div><h5>Highlights</h5><ul><li>PCT core patent (sensorless dosing)</li><li>F&amp;B 4-fluid pre-validation, avg. error ≤0.45%</li><li>EVER precision dispenser</li></ul></div>
+      </div>
+    </div>
+
+    <div class="dl-area">
+      <div class="hd"><span class="no">06</span><h4>Smart Agriculture · Precision Spraying</h4></div>
+      <p>We apply the sensorless dosing core to electric/autonomous sprayers, weeding robots, and smart-farm nutrient supply, realizing speed-proportional precise spraying and reduced input loss.</p>
+      <div class="dl-meta">
+        <div><h5>Approach</h5><ul><li>Speed-proportional real-time spray control</li><li>Chemical-resistant metered chemical-supply module</li><li>Vision-based sorting (e.g., YOLO)</li></ul></div>
+        <div><h5>Highlights</h5><ul><li>35 spraying modules delivered to BULS Co.</li><li>NIAS precision-spraying paid project</li><li>YOLO-based apple quality sorter</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="dl-cta">
+    <div><h3>Collaboration · Graduate Admissions</h3><p>We welcome students, researchers, and industry partners in off-road machinery, fluid machinery, and AI.</p></div>
+    <div class="dl-cbtns">
+      <a class="dl-btn" href="https://drom.knu.ac.kr/" target="_blank" rel="noopener">Lab Website</a>
+      <a class="dl-btn ghost" href="https://scholar.google.com/citations?hl=en&amp;user=UO2s2TwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+  </div>
+</section>
+<!-- Edit guide: replace toggle/link href · colors via variables at top of .dl-root -->
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About the Lab · DROM Lab · KNU</title>
+<meta name="description" content="Overview, achievements, industry collaboration and members of the DROM Laboratory.">
+<meta property="og:title" content="About the Lab · DROM Lab · KNU">
+<meta property="og:description" content="Overview, achievements, industry collaboration and members of the DROM Laboratory.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="drom_logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#ffffff;}
+  body{font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,-apple-system,sans-serif;}
+</style>
+</head>
+<body>
+<!-- [LABORATORY · EN] Design & Reliability of Off-road Machinery Laboratory (DROM Lab) -->
+<section class="dl-root" id="dl-lab">
+  <style>
+    .dl-root{--navy:#0d2440;--blue:#b02419;--teal:#d5241a;--accent:#d5241a;--accent2:#eaa79e;
+      --ink:#141b24;--muted:#5a6472;--line:#e5e9f0;--bg:#f4f7fb;--card:#fff;
+      color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,-apple-system,sans-serif;
+      line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all;font-size:17px;max-width:1080px;margin:0 auto;padding:0 22px 60px;box-sizing:border-box;}
+    .dl-root *{box-sizing:border-box;}
+    .dl-root h1,.dl-root h2,.dl-root h3,.dl-root h4,.dl-root p,.dl-root ul{margin:0;}
+    .dl-root a{color:var(--blue);text-decoration:none;}.dl-root a:hover{text-decoration:underline;}
+    .dl-lang{display:flex;justify-content:flex-end;gap:6px;margin-top:16px;font-size:13.5px;font-weight:700;}
+    .dl-lang a{padding:4px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);}
+    .dl-lang a.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+    .dl-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap;}
+    .dl-logo{height:46px;width:auto;display:block;}
+    .dl-top .dl-lang{margin-top:0;}
+    .dl-glance dd a{color:#eab3ab;}
+    .dl-hero{position:relative;overflow:hidden;border-radius:20px;margin-top:12px;
+      background:linear-gradient(115deg,#0d2440 0%,#5a2233 55%,#d5241a 135%);color:#fff;
+      display:grid;grid-template-columns:1.25fr .9fr;gap:32px;align-items:center;padding:50px 46px;}
+    .dl-hero::after{content:"";position:absolute;right:-70px;top:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(213,36,26,.20),transparent 68%);}
+    .dl-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--accent2);text-transform:uppercase;margin-bottom:14px;}
+    .dl-eyebrow::before{content:"";width:28px;height:2px;background:var(--accent);}
+    .dl-hero h1{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.02em;line-height:1.14;}
+    .dl-hero .en{display:block;font-size:16px;font-weight:600;color:#c3d5e8;margin-top:9px;}
+    .dl-hero p.lead{margin-top:16px;max-width:520px;font-size:16px;color:#d8e4f0;}
+    .dl-glance{position:relative;z-index:2;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:24px 26px;}
+    .dl-glance h5{font-size:12.5px;letter-spacing:.1em;color:var(--accent2);text-transform:uppercase;font-weight:800;margin-bottom:14px;}
+    .dl-glance dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:11px 16px;}
+    .dl-glance dt{font-size:13px;color:#a9bfd6;font-weight:700;white-space:nowrap;}
+    .dl-glance dd{margin:0;font-size:14.5px;color:#fff;font-weight:600;line-height:1.4;white-space:nowrap;}
+    .dl-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px;}
+    .dl-stat{position:relative;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:22px 16px;text-align:center;overflow:hidden;}
+    .dl-stat::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--blue));}
+    .dl-stat b{display:block;font-size:33px;font-weight:800;color:var(--blue);}.dl-stat span{display:block;margin-top:3px;font-size:13.5px;color:var(--muted);font-weight:600;}
+    .dl-sec{margin-top:44px;}
+    .dl-sechead{display:flex;align-items:center;gap:13px;margin-bottom:18px;}
+    .dl-sechead .bar{width:6px;height:26px;border-radius:3px;background:linear-gradient(var(--teal),var(--blue));}
+    .dl-sechead h2{font-size:26px;font-weight:800;letter-spacing:-.01em;}
+    .dl-overview{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:16px;padding:26px 30px;font-size:16.5px;color:#33404f;}
+    .dl-overview strong{color:var(--navy);}
+    .dl-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+    .dl-rcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;transition:transform .16s,box-shadow .16s;}
+    .dl-rcard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(13,36,64,.09);}
+    .dl-rcard .n{font-size:13px;font-weight:800;color:var(--teal);}
+    .dl-rcard h4{font-size:18px;font-weight:800;margin-top:6px;}
+    .dl-rcard p{margin-top:8px;font-size:14.5px;color:var(--muted);}
+    .dl-ind{display:grid;grid-template-columns:1.12fr 1fr;border-radius:18px;overflow:hidden;border:1px solid var(--line);}
+    .dl-indL{background:linear-gradient(150deg,var(--navy),#123a63);color:#fff;padding:32px 32px;}
+    .dl-indL .firm{font-size:12.5px;color:var(--accent2);font-weight:700;letter-spacing:.1em;margin-bottom:9px;}
+    .dl-indL h3{font-size:20px;font-weight:800;}.dl-indL p{margin-top:11px;font-size:15px;color:#d7e4f1;}
+    .dl-indR{background:var(--bg);padding:28px 30px;display:flex;flex-direction:column;gap:14px;}
+    .dl-fact{display:flex;gap:14px;}.dl-fact b{color:var(--blue);font-weight:800;min-width:92px;font-size:15px;}.dl-fact span{font-size:14.5px;color:#39454f;}
+    .dl-two{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+    .dl-panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;}
+    .dl-panel > h4{font-size:18px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:9px;}
+    .dl-panel > h4::before{content:"";width:5px;height:19px;border-radius:3px;background:linear-gradient(var(--teal),var(--blue));}
+    .dl-members{display:flex;flex-wrap:wrap;gap:10px;}
+    .dl-chip{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 17px;min-width:120px;}
+    .dl-chip b{font-size:15px;font-weight:800;}.dl-chip span{display:block;font-size:13px;color:var(--muted);}
+    .dl-slist{list-style:none;padding:0;}
+    .dl-slist li{position:relative;padding:9px 0 9px 18px;font-size:15.5px;color:#39454f;border-bottom:1px dashed var(--line);}
+    .dl-slist li:last-child{border-bottom:none;}
+    .dl-slist li::before{content:"";position:absolute;left:2px;top:16px;width:6px;height:6px;border-radius:50%;background:var(--teal);}
+    .dl-note{margin-top:14px;font-size:13.5px;color:var(--muted);}
+    .dl-cta{margin-top:44px;background:linear-gradient(120deg,var(--blue),var(--navy));color:#fff;border-radius:18px;padding:32px 36px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;}
+    .dl-cta h3{font-size:22px;font-weight:800;color:#fff;}.dl-cta p{margin-top:7px;font-size:15.5px;color:#d7e4f1;}
+    .dl-cbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;}
+    .dl-btn{background:#fff;color:var(--navy);font-weight:800;font-size:15px;padding:13px 22px;border-radius:11px;white-space:nowrap;}
+    .dl-btn.ghost{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.55);}
+    @media (max-width:840px){.dl-root{font-size:16px;}.dl-hero{grid-template-columns:1fr;gap:22px;padding:38px 26px;}
+      .dl-stats{grid-template-columns:repeat(2,1fr);}.dl-grid3{grid-template-columns:1fr;}.dl-ind{grid-template-columns:1fr;}
+      .dl-two{grid-template-columns:1fr;}.dl-cta{grid-template-columns:1fr;}.dl-cbtns{justify-content:flex-start;}}
+  </style>
+
+  <div class="dl-top">
+    <img class="dl-logo" src="drom_logo.svg" alt="DROM Lab · Design and Reliability of Off-road Machinery Laboratory">
+    <div class="dl-lang"><a href="ko_3_lab.html"><!-- edit -->KO</a><a class="on" href="#">EN</a></div>
+  </div>
+
+  <!-- HERO -->
+  <div class="dl-hero">
+    <div>
+      <span class="dl-eyebrow">Kyungpook National University · DROM Lab</span>
+      <h1>Design &amp; Reliability of<br>Off-road Machinery Lab<span class="en">노외기계설계 및 신뢰성평가 연구실</span></h1>
+      <p class="lead">From the roots of off-road machinery design &amp; reliability to gear/transmission dynamics, PD pumps &amp; flow meters, and physics-informed AI precision fluid control — connecting theory, testing, and the field.</p>
+    </div>
+    <div class="dl-glance">
+      <h5>At a Glance</h5>
+      <dl>
+        <dt>Lab</dt><dd>Off-road Machinery (DROM)</dd>
+        <dt>PI</dt><dd>Prof. Sung-Bo Shim</dd>
+        <dt>Focus</dt><dd>Design · reliability · control</dd>
+        <dt>Industry</dt><dd>EVER Co., Ltd. (KNU)</dd>
+        <dt>Output</dt><dd>67 papers · 6 patents · 27 projects</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="dl-stats">
+    <div class="dl-stat"><b>67</b><span>Publications</span></div>
+    <div class="dl-stat"><b>6</b><span>Patents</span></div>
+    <div class="dl-stat"><b>27</b><span>Projects</span></div>
+    <div class="dl-stat"><b>1</b><span>Spin-off company</span></div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>About the Lab</h2></div>
+    <div class="dl-overview">
+      The <strong>Design &amp; Reliability of Off-road Machinery Laboratory (DROM Lab)</strong> centers on the <strong>design, analysis, and reliability assessment</strong> of machinery operated off the road — tractors, combines, and heavy construction equipment. We integrate gear &amp; transmission dynamics, precision design of PD pumps &amp; flow meters, and <strong>physics-informed AI</strong> sensorless fluid control, so that lab theory reaches real products and the agricultural and industrial field. The accumulated results are commercialized as the core technology of <strong>EVER Co., Ltd.</strong>, a KNU Holdings subsidiary.
+    </div>
+  </div>
+
+  <!-- RESEARCH -->
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Research Areas</h2></div>
+    <div class="dl-grid3">
+      <div class="dl-rcard"><div class="n">01</div><h4>Off-road Machinery Design</h4><p>Precision design of tractor/combine/heavy-equipment drivetrains, MBD and structural analysis.</p></div>
+      <div class="dl-rcard"><div class="n">02</div><h4>Reliability &amp; Life Assessment</h4><p>Accelerated-life, corrosion, durability testing and load-measurement-based reliability with robust design.</p></div>
+      <div class="dl-rcard"><div class="n">03</div><h4>Gear &amp; Transmission Dynamics</h4><p>Dynamic factor &amp; transmission-error prediction, planetary transmissions, gearbox churning loss.</p></div>
+      <div class="dl-rcard"><div class="n">04</div><h4>PD Pump &amp; Flow Metering</h4><p>Leakage modeling and optimal design of rotary-clap, oval-gear, lobe, and vane pumps/meters.</p></div>
+      <div class="dl-rcard"><div class="n">05</div><h4>Sensorless Fluid Control</h4><p>±1% volumetric dosing using pump drive data and AI virtual sensors.</p></div>
+      <div class="dl-rcard"><div class="n">06</div><h4>Physics-informed AI · Smart Ag</h4><p>Physics + AI hybrid modeling for precision spraying and smart-farm automation.</p></div>
+    </div>
+    <p class="dl-note">See the <a href="en_4_research.html"><!-- edit -->Research Areas page</a> for details.</p>
+  </div>
+
+  <!-- INDUSTRY -->
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Industry Collaboration</h2></div>
+    <div class="dl-ind">
+      <div class="dl-indL">
+        <div class="firm">SPIN-OFF · KNU Holdings Subsidiary</div>
+        <h3>EVER Co., Ltd. — Physics-informed Vertical AI for Fluid Machinery</h3>
+        <p>A faculty start-up / research-institute company founded in 2023 on the lab's core technology. Its sensorless dosing and precision flow-metering solutions expand into F&amp;B dispensers, precision-spraying modules, and smart-farm nutrient supply.</p>
+      </div>
+      <div class="dl-indR">
+        <div class="dl-fact"><b>Core Tech</b><span>PCT-patented sensorless volumetric control core</span></div>
+        <div class="dl-fact"><b>Field Proof</b><span>35 spraying modules delivered to BULS Co. (2nd sales year)</span></div>
+        <div class="dl-fact"><b>Government</b><span>Paid precision-spraying R&amp;D with NIAS (orchard/open-field)</span></div>
+        <div class="dl-fact"><b>Products</b><span>±1% precision dispenser · compact oval flow meter · spraying module</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEMBERS / OUTREACH -->
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Members &amp; Outreach</h2></div>
+    <div class="dl-two">
+      <div class="dl-panel">
+        <h4>Members · Admissions</h4>
+        <div class="dl-members">
+          <div class="dl-chip"><b>Sung-Bo Shim</b><span>PI · Associate Professor</span></div>
+          <div class="dl-chip"><b>Graduate Students</b><span>M.S. / Ph.D.<!-- edit --></span></div>
+          <div class="dl-chip"><b>Undergrad Researchers</b><span>Interns<!-- edit --></span></div>
+        </div>
+        <p class="dl-note">We continuously recruit graduate and undergraduate researchers interested in off-road machinery, fluid machinery, and AI.<!-- edit --></p>
+      </div>
+      <div class="dl-panel">
+        <h4>Service &amp; Outreach</h4>
+        <ul class="dl-slist">
+          <li>Director, Korean Society for Agricultural Machinery · Editorial Board, J. of Biosystems Engineering</li>
+          <li>Academic Director, Korean Society for Machine Tool Engineers (former Editorial Board)</li>
+          <li>Editorial Board, Journal of Agriculture &amp; Life Science</li>
+          <li>Evaluation &amp; advisory committees for RDA, IPET, KITECH, and others</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="dl-cta">
+    <div><h3>Join Us · Graduate Admissions</h3><p>Dept. of Bio-Industrial Machinery Engineering, KNU · Design &amp; Reliability of Off-road Machinery Laboratory</p></div>
+    <div class="dl-cbtns">
+      <a class="dl-btn" href="https://drom.knu.ac.kr/" target="_blank" rel="noopener">Lab Website</a>
+      <a class="dl-btn ghost" href="https://scholar.google.com/citations?hl=en&amp;user=UO2s2TwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+  </div>
+</section>
+<!-- Edit guide: replace toggle/link href · fill actual members · colors via variables at top of .dl-root -->
+</body>
+</html>
