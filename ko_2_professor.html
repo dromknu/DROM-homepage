@@ -110,6 +110,10 @@
     .dl-cbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;}
     .dl-btn{background:#fff;color:var(--navy);font-weight:800;font-size:15px;padding:13px 22px;border-radius:11px;white-space:nowrap;}
     .dl-btn.ghost{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.55);}
+    .dl-mnav{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;}
+    .dl-mnav a{padding:9px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:14.5px;color:var(--muted);background:#fff;}
+    .dl-mnav a.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+    .dl-mnav a:hover{text-decoration:none;border-color:var(--accent2);}
     @media (max-width:840px){.dl-root{font-size:16px;}.dl-hero{grid-template-columns:1fr;gap:24px;padding:36px 26px;}
       .dl-profile{grid-template-columns:1fr;}.dl-photo{min-height:230px;max-width:230px;margin:0 auto;width:100%;}
       .dl-two{grid-template-columns:1fr;}.dl-int{grid-template-columns:1fr;}.dl-books{grid-template-columns:1fr;}
@@ -137,19 +141,20 @@
         <dt>겸직</dt><dd>㈜EVER 대표이사</dd>
         <dt>전공</dt><dd>노외기계 설계·신뢰성평가</dd>
         <dt>실적</dt><dd>논문 67 · 특허 6 · 과제 27</dd>
+        <dt>이메일</dt><dd><a href="mailto:sbs80@knu.ac.kr">sbs80@knu.ac.kr</a></dd>
         <dt>Link</dt><dd><a href="https://scholar.google.com/citations?hl=ko&amp;user=UO2s2TwAAAAJ" target="_blank" rel="noopener">Google Scholar</a></dd>
       </dl>
     </div>
   </div>
+
+  <div class="dl-mnav"><a class="on" href="#">교수 소개</a><a href="ko_5_students.html">재학생</a><a href="ko_6_alumni.html">졸업생</a></div>
 
   <!-- 인사말 -->
   <div class="dl-sec">
     <div class="dl-sechead"><span class="bar"></span><h2>인사말</h2><span class="enl">Greeting</span></div>
     <div class="dl-profile">
       <div class="dl-photo">
-        <!-- 사진 삽입: 이 div 내부를 <img src="사진.jpg" style="width:100%;height:100%;object-fit:cover"> 로 교체 -->
-        <div class="ph-ico">🖼</div>
-        <div class="hint">교수 사진 삽입 영역</div>
+        <img src="images/professor.jpg" alt="심성보 교수" style="width:100%;height:100%;object-fit:cover;object-position:center top">
       </div>
       <div class="dl-greet">
         <h4>“도로 밖에서 일하는 기계를, 더 정밀하고 더 오래.”</h4>
@@ -181,6 +186,8 @@
           <li><b>연구 도구</b> 다물체 동역학(MBD), 구조·피로 해석, 최적설계(SQP)</li>
           <li><b>응용 분야</b> 용적식 펌프·유량계, 센서리스 정밀 유체제어</li>
           <li><b>융합 방법</b> Physics-informed AI · 스마트농업 자동화</li>
+          <li><b>연구실</b> 경북대 농업생명과학대학 4호관 704호</li>
+          <li><b>담당 과목</b> 동역학 · 재료역학 · 진동공학 · 트랙터공학 · 디지털스마트농업기계공학 · 유압공학특론 · 생물산업기계설계특론 1&amp;2 · 생물산업기계신뢰성공학 · 스마트동력전달시스템 특론 · 스마트농업 시스템 자동제어</li>
         </ul>
       </div>
     </div>
@@ -265,6 +272,13 @@
         <div class="dl-award">
           <div class="dl-aw-ic">AWARD</div>
           <div>
+            <b>2025 추계 최우수 논문 발표상</b>
+            <span>한국농업기계학회 · 2025</span>
+          </div>
+        </div>
+        <div class="dl-award" style="margin-top:12px;">
+          <div class="dl-aw-ic">AWARD</div>
+          <div>
             <b>2019 추계 학술대회 우수 논문 발표상</b>
             <span>한국기계가공학회 · 2019.10</span>
           </div>
@@ -280,9 +294,9 @@
 
   <!-- CTA -->
   <div class="dl-cta">
-    <div><h3>연락 · 상담 문의</h3><p>경북대학교 스마트생물산업기계공학과 · 심성보 부교수 연구실</p></div>
+    <div><h3>연락 · 상담 문의</h3><p>경북대 농업생명과학대학 4호관 704호 · Tel 053-950-5793 · Fax 053-950-6780</p></div>
     <div class="dl-cbtns">
-      <a class="dl-btn" href="https://drom.knu.ac.kr/" target="_blank" rel="noopener">연구실 홈페이지</a>
+      <a class="dl-btn" href="mailto:sbs80@knu.ac.kr">sbs80@knu.ac.kr</a>
       <a class="dl-btn ghost" href="https://scholar.google.com/citations?hl=ko&amp;user=UO2s2TwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
     </div>
   </div>

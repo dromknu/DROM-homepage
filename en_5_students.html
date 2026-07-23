@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Students · DROM Lab · KNU</title>
+<meta name="description" content="Graduate and undergraduate members of the DROM Laboratory, Kyungpook National University.">
+<meta property="og:title" content="Students · DROM Lab · KNU">
+<meta property="og:description" content="Graduate and undergraduate members of the DROM Laboratory, Kyungpook National University.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="drom_logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>html,body{margin:0;padding:0;background:#fff;}body{font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,-apple-system,sans-serif;}</style>
+</head>
+<body>
+<section class="dl-root" id="dl-students">
+  <style>
+    .dl-root{--navy:#0d2440;--blue:#b02419;--teal:#d5241a;--accent:#d5241a;--accent2:#eaa79e;
+      --ink:#141b24;--muted:#5a6472;--line:#e5e9f0;--bg:#f4f7fb;--card:#fff;
+      color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,-apple-system,sans-serif;
+      line-height:1.62;-webkit-font-smoothing:antialiased;word-break:keep-all;font-size:17px;max-width:1080px;margin:0 auto;padding:0 22px 60px;box-sizing:border-box;}
+    .dl-root *{box-sizing:border-box;}
+    .dl-root h1,.dl-root h2,.dl-root h3,.dl-root h4,.dl-root p,.dl-root ul{margin:0;}
+    .dl-root a{color:var(--blue);text-decoration:none;}.dl-root a:hover{text-decoration:underline;}
+    .dl-lang{display:flex;justify-content:flex-end;gap:6px;margin-top:16px;font-size:13.5px;font-weight:700;}
+    .dl-lang a{padding:4px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);}
+    .dl-lang a.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+    .dl-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap;}
+    .dl-logo{height:46px;width:auto;display:block;}
+    .dl-top .dl-lang{margin-top:0;}
+    .dl-hero{position:relative;overflow:hidden;border-radius:20px;margin-top:12px;
+      background:linear-gradient(115deg,#0d2440 0%,#5a2233 55%,#d5241a 135%);color:#fff;padding:44px 46px;}
+    .dl-hero::after{content:"";position:absolute;right:-70px;top:-80px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(213,36,26,.20),transparent 68%);}
+    .dl-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--accent2);text-transform:uppercase;margin-bottom:14px;}
+    .dl-eyebrow::before{content:"";width:28px;height:2px;background:var(--accent);}
+    .dl-hero h1{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.02em;}
+    .dl-hero p.lead{margin-top:14px;max-width:640px;font-size:16px;color:#d8e4f0;}
+    .dl-mnav{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;}
+    .dl-mnav a{padding:9px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:14.5px;color:var(--muted);background:#fff;}
+    .dl-mnav a.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+    .dl-mnav a:hover{text-decoration:none;border-color:var(--accent2);}
+    .dl-sec{margin-top:38px;}
+    .dl-sechead{display:flex;align-items:center;gap:13px;margin-bottom:18px;}
+    .dl-sechead .bar{width:6px;height:24px;border-radius:3px;background:linear-gradient(var(--teal),var(--blue));}
+    .dl-sechead h2{font-size:23px;font-weight:800;}
+    .dl-sechead .cnt{margin-left:auto;font-size:14px;font-weight:700;color:var(--muted);}
+    .dl-mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+    .dl-mcard{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .16s,box-shadow .16s;}
+    .dl-mcard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(13,36,64,.10);}
+    .dl-mphoto{width:100%;aspect-ratio:3/3.8;object-fit:cover;object-position:center top;display:block;background:#eef2f7;}
+    .dl-mbody{padding:15px 16px 17px;}
+    .dl-mname{font-size:17px;font-weight:800;color:var(--ink);}
+    .dl-mname small{font-size:12px;font-weight:800;color:var(--teal);margin-left:7px;}
+    .dl-mrole{font-size:13.5px;color:var(--muted);font-weight:600;margin-top:3px;}
+    .dl-memail{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--blue);word-break:break-all;}
+    .dl-memail::before{content:"\2709";margin-right:5px;opacity:.7;}
+    .dl-cta{margin-top:44px;background:linear-gradient(120deg,var(--blue),var(--navy));color:#fff;border-radius:18px;padding:30px 34px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;}
+    .dl-cta h3{font-size:21px;font-weight:800;color:#fff;}.dl-cta p{margin-top:7px;font-size:15px;color:#d7e4f1;}
+    .dl-cbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;}
+    .dl-btn{background:#fff;color:var(--navy);font-weight:800;font-size:15px;padding:12px 20px;border-radius:11px;white-space:nowrap;}
+    .dl-btn.ghost{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.55);}
+    @media (max-width:840px){.dl-root{font-size:16px;}.dl-hero{padding:34px 24px;}.dl-mgrid{grid-template-columns:repeat(2,1fr);gap:13px;}
+      .dl-cta{grid-template-columns:1fr;}.dl-cbtns{justify-content:flex-start;}}
+    @media (max-width:460px){.dl-mgrid{grid-template-columns:repeat(2,1fr);}}
+  </style>
+
+  <div class="dl-top">
+    <a href="en_1_main.html"><img class="dl-logo" src="drom_logo.svg" alt="DROM Lab · 노외기계설계 및 신뢰성평가 연구실"></a>
+    <div class="dl-lang"><a href="ko_5_students.html">KO</a><a class="on" href="#">EN</a></div>
+  </div>
+  <div class="dl-hero">
+    <span class="dl-eyebrow">DROM Lab · Members</span>
+    <h1>Students</h1>
+    <p class="lead">Graduate and undergraduate researchers working on off-road machinery, fluid machinery, and physics-informed AI.</p>
+    <div class="dl-mnav"><a href="en_2_professor.html">Professor</a><a class="on" href="#">Students</a><a href="en_6_alumni.html">Alumni</a></div>
+  </div>
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Graduate Students</h2><span class="cnt">3</span></div>
+    <div class="dl-mgrid"><div class="dl-mcard"><img class="dl-mphoto" src="images/student_donggun.jpg" alt="Lee Dong-gun" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Lee Dong-gun</div><div class="dl-mrole">M.S. Student</div><a class="dl-memail" href="mailto:donggun5797@knu.ac.kr">donggun5797@knu.ac.kr</a></div></div><div class="dl-mcard"><img class="dl-mphoto" src="images/student_baegiseon.jpg" alt="Bae Gi-seon" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Bae Gi-seon</div><div class="dl-mrole">M.S. Student</div><a class="dl-memail" href="mailto:bks1016@knu.ac.kr">bks1016@knu.ac.kr</a></div></div><div class="dl-mcard"><img class="dl-mphoto" src="images/student_yeonsong.jpg" alt="Lee Yeon-song" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Lee Yeon-song</div><div class="dl-mrole">M.S. Student</div><a class="dl-memail" href="mailto:leeys@knu.ac.kr">leeys@knu.ac.kr</a></div></div></div>
+  </div>
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Undergraduate Researchers</h2><span class="cnt">5</span></div>
+    <div class="dl-mgrid"><div class="dl-mcard"><img class="dl-mphoto" src="images/student_imeunji.jpg" alt="Im Eun-ji" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Im Eun-ji</div><div class="dl-mrole">Undergraduate Researcher</div><a class="dl-memail" href="mailto:soosooae2@knu.ac.kr">soosooae2@knu.ac.kr</a></div></div><div class="dl-mcard"><img class="dl-mphoto" src="images/student_eunseo.jpg" alt="Lee Eun-seo" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Lee Eun-seo</div><div class="dl-mrole">Undergraduate Researcher</div><a class="dl-memail" href="mailto:ens201@knu.ac.kr">ens201@knu.ac.kr</a></div></div><div class="dl-mcard"><img class="dl-mphoto" src="images/student_yejin.jpg" alt="Lee Ye-jin" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Lee Ye-jin</div><div class="dl-mrole">Undergraduate Researcher</div><a class="dl-memail" href="mailto:yena31566@knu.ac.kr">yena31566@knu.ac.kr</a></div></div><div class="dl-mcard"><img class="dl-mphoto" src="images/student_seungchan.jpg" alt="Im Seung-chan" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Im Seung-chan</div><div class="dl-mrole">Undergraduate Researcher</div><a class="dl-memail" href="mailto:tmdcks671209@knu.ac.kr">tmdcks671209@knu.ac.kr</a></div></div><div class="dl-mcard"><img class="dl-mphoto" src="images/student_junhyeok.jpg" alt="Heo Jun-hyeok" loading="lazy"><div class="dl-mbody"><div class="dl-mname">Heo Jun-hyeok</div><div class="dl-mrole">Undergraduate Researcher</div><a class="dl-memail" href="mailto:os6070@knu.ac.kr">os6070@knu.ac.kr</a></div></div></div>
+  </div>
+  <div class="dl-cta">
+    <div><h3>Join the Lab</h3><p>We continuously welcome students interested in off-road/fluid machinery and AI convergence research.</p></div>
+    <div class="dl-cbtns">
+      <a class="dl-btn" href="https://drom.knu.ac.kr/" target="_blank" rel="noopener">Lab Home</a>
+      <a class="dl-btn ghost" href="en_2_professor.html">Professor</a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
