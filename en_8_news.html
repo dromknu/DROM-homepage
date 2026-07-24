@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Notices · DROM Lab · KNU</title>
-<meta name="description" content="Notices and announcements of the DROM Laboratory.">
-<meta property="og:title" content="Notices · DROM Lab · KNU">
-<meta property="og:description" content="Notices and announcements of the DROM Laboratory.">
+<title>News · Gallery · DROM Lab · KNU</title>
+<meta name="description" content="Awards, workshops and news of the DROM Laboratory, with a photo gallery.">
+<meta property="og:title" content="News · Gallery · DROM Lab · KNU">
+<meta property="og:description" content="Awards, workshops and news of the DROM Laboratory, with a photo gallery.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="drom_logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,12 +62,25 @@
     .dl-note{margin-top:14px;font-size:13.5px;color:var(--muted);}
     .dl-empty{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:48px 30px;text-align:center;color:var(--muted);}
     .dl-empty b{display:block;font-size:16px;color:var(--ink);font-weight:800;margin-bottom:6px;}
+    .dl-award2{display:grid;grid-template-columns:210px 1fr;gap:28px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;align-items:center;}
+    .dl-award2 img{width:100%;border-radius:10px;border:1px solid var(--line);display:block;}
+    .dl-award2 .aw-tag{display:inline-block;background:linear-gradient(160deg,#f3c85f,#e0a12f);color:#5b4410;font-weight:800;font-size:12px;padding:5px 13px;border-radius:999px;margin-bottom:12px;letter-spacing:.03em;}
+    .dl-award2 h4{font-size:20px;font-weight:800;color:var(--navy);}
+    .dl-award2 .who{margin-top:8px;font-size:16px;color:var(--blue);font-weight:800;}
+    .dl-award2 p{margin-top:8px;font-size:15px;color:#3a4653;}
+    .dl-award2 .meta{margin-top:10px;font-size:13.5px;color:var(--muted);}
+    .dl-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+    .dl-gallery figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#eef2f7;}
+    .dl-gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;transition:transform .2s;}
+    .dl-gallery figure:hover img{transform:scale(1.05);}
+    .dl-cap{margin-top:13px;font-size:13.5px;color:var(--muted);}
     .dl-cta{margin-top:44px;background:linear-gradient(120deg,var(--blue),var(--navy));color:#fff;border-radius:18px;padding:30px 34px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;}
     .dl-cta h3{font-size:21px;font-weight:800;color:#fff;}.dl-cta p{margin-top:7px;font-size:15px;color:#d7e4f1;}
     .dl-cbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;}
     .dl-btn{background:#fff;color:var(--navy);font-weight:800;font-size:15px;padding:12px 20px;border-radius:11px;white-space:nowrap;}
     .dl-btn.ghost{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.55);}
     @media (max-width:840px){.dl-root{font-size:16px;}.dl-hero{padding:34px 24px;}.dl-scholar{flex-direction:column;align-items:flex-start;}
+      .dl-award2{grid-template-columns:1fr;}.dl-award2 img{max-width:230px;}.dl-gallery{grid-template-columns:repeat(2,1fr);}
       .dl-cta{grid-template-columns:1fr;}.dl-cbtns{justify-content:flex-start;}.dl-sechead .enl{display:none;}}
   </style>
 
@@ -76,17 +89,30 @@
     <div class="dl-lang"><a href="ko_8_news.html">KO</a><a class="on" href="#">EN</a></div>
   </div>
   <div class="dl-hero">
-    <span class="dl-eyebrow">DROM Lab · Notices</span>
-    <h1>Notices</h1>
-    <p class="lead">Lab news, recruitment, and announcements.</p>
+    <span class="dl-eyebrow">DROM Lab · News</span>
+    <h1>News · Gallery</h1>
+    <p class="lead">Lab news including awards, workshops and announcements.</p>
   </div>
   <div class="dl-sec">
-    <!-- 공지가 생기면 아래 형식으로 목록을 만들고, 그 아래 dl-empty 블록은 지우세요:
-    <div class="dl-newshead"><span>Title</span><span>Date</span></div>
-    <ul class="dl-newslist">
-      <li><span class="nt">공지 제목</span><span class="nd">2026-07-23</span></li>
-    </ul>
-    -->
+    <div class="dl-sechead"><span class="bar"></span><h2>Awards</h2><span class="enl"></span></div>
+    <div class="dl-award2">
+      <img src="images/award_2025.jpg" alt="최우수 논문 발표상 상장">
+      <div>
+        <span class="aw-tag">AWARD · Best Paper Presentation</span>
+        <h4>Best Paper Presentation Award</h4>
+        <div class="who">Lee Yeon-song (M.S. Student)</div>
+        <p>Awarded for an outstanding paper presentation at the 2025 Fall Conference of the Korean Society for Agricultural Machinery.</p>
+        <div class="meta">Korean Society for Agricultural Machinery · Oct 29, 2025 · KNU</div>
+      </div>
+    </div>
+  </div>
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Gallery</h2><span class="enl"></span></div>
+    <div class="dl-gallery"><figure><img src="images/workshop_1.jpg" alt="워크샵 사진 1" loading="lazy"></figure><figure><img src="images/workshop_2.jpg" alt="워크샵 사진 2" loading="lazy"></figure><figure><img src="images/workshop_3.jpg" alt="워크샵 사진 3" loading="lazy"></figure><figure><img src="images/workshop_4.jpg" alt="워크샵 사진 4" loading="lazy"></figure></div>
+    <p class="dl-cap">2026 Lab Workshop · Jan 17–18, 2026</p>
+  </div>
+  <div class="dl-sec">
+    <div class="dl-sechead"><span class="bar"></span><h2>Notices</h2><span class="enl"></span></div>
     <div class="dl-empty"><b>No notices yet.</b>New announcements will appear here.</div>
   </div>
   <div class="dl-cta">
