@@ -13,19 +13,23 @@
 | `ko_6_alumni.html` | 졸업생 소개 (한국어) |
 | `ko_3_lab.html` | 연구실 소개 (한국어) |
 | `ko_4_research.html` | 연구 분야 (한국어) |
+| `ko_7_publications.html` | 출판 (한국어) — 저널(Google Scholar) + 대표 논문 |
+| `ko_8_news.html` | 공지사항 (한국어) — 정적 목록 (읽기 전용) |
 | `en_1_main.html` | 메인 (English) |
 | `en_2_professor.html` | Professor (English) |
 | `en_5_students.html` | Students (English) |
 | `en_6_alumni.html` | Alumni (English) |
 | `en_3_lab.html` | About the Lab (English) |
 | `en_4_research.html` | Research (English) |
+| `en_7_publications.html` | Publications (English) |
+| `en_8_news.html` | Notices (English) |
 | `images/` | 교수·학생·졸업생 사진 (professor.jpg, student_*.jpg, grad_*.jpg) |
 | `drom_logo.svg` | 로고 |
 | `CNAME` | 커스텀 도메인 설정 (drom.knu.ac.kr) |
 | `404.html` | 없는 페이지 안내 |
 
 ## 메뉴 구조
-메인 "둘러보기": **연구원 소개 / 연구실 소개 / 연구 분야**.
+메인 "둘러보기": **연구원 소개 / 연구실 소개 / 연구 분야 / 출판 / 공지사항**.
 "연구원 소개"는 교수 소개 페이지로 연결되고, 교수/재학생/졸업생 페이지 상단의
 서브 탭(교수 소개 · 재학생 · 졸업생)으로 서로 이동합니다.
 
